@@ -1,0 +1,20 @@
+{
+  "name": "proofpilot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ProofPilot: AI agent that builds dispute-proof evidence at checkout, flags risky orders early, and drafts PayPal dispute responses automatically.",
+  "scripts": {
+    "setup": "npm --prefix server install && npm --prefix client install",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "lint": "npm --prefix client run lint",
+    "build": "npm --prefix server install --omit=dev && npm --prefix client install && npm --prefix client run build",
+    "start": "npm --prefix server start"
+  },
+  "engines": {
+    "node": ">=20.19"
+  },
+  "keywords": ["paypal", "disputes", "ai-agent", "claude", "hackathon"],
+  "author": "GURU SURYA RAJA J",
+  "license": "MIT"
+}

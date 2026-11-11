@@ -1,0 +1,36 @@
+# Render Blueprint: one web service serves the API and the built React app.
+services:
+  - type: web
+    name: proofpilot
+    runtime: node
+    plan: free
+    buildCommand: npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: 22.18.0
+      - key: PUBLIC_URL
+        sync: false # e.g. https://proofpilot.onrender.com (needed for webhook registration)
+      - key: DEMO_EMAIL
+        value: merchant@proofpilot.local
+      - key: DEMO_PASSWORD
+        sync: false
+      - key: PAYPAL_CLIENT_ID
+        sync: false
+      - key: PAYPAL_CLIENT_SECRET
+        sync: false
+      - key: PAYPAL_BASE_URL
+        value: https://api-m.sandbox.paypal.com
+      - key: PAYPAL_WEBHOOK_ID
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-2.5-flash
+      - key: AI_REQUESTS_PER_MINUTE
+        value: "5" # raise on a paid Gemini key
+      - key: MONGODB_URI
+        sync: false # Render's disk is ephemeral; use MongoDB Atlas for durable data

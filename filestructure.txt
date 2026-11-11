@@ -1,0 +1,80 @@
+|-- .env.example
+|-- .gitignore
+|-- CLAUDE.md
+|-- client
+    |-- eslint.config.js
+    |-- index.html
+    |-- package.json
+    |-- public
+        |-- favicon.svg
+    |-- src
+        |-- App.jsx
+        |-- components
+            |-- ActivityFeed.jsx
+            |-- AppShell.jsx
+            |-- EvidencePack.jsx
+            |-- Icon.jsx
+            |-- ProductArt.jsx
+            |-- StoreChrome.jsx
+            |-- ui.jsx
+            |-- ViewSwitch.jsx
+        |-- lib
+            |-- api.js
+            |-- format.js
+            |-- providers.jsx
+            |-- storeConfig.js
+        |-- main.jsx
+        |-- pages
+            |-- DisputeDetail.jsx
+            |-- Disputes.jsx
+            |-- Home.jsx
+            |-- Login.jsx
+            |-- OrderDetail.jsx
+            |-- Orders.jsx
+            |-- Settings.jsx
+            |-- Store.jsx
+            |-- StoreOrder.jsx
+            |-- StoreTrack.jsx
+        |-- styles
+            |-- app.css
+            |-- store.css
+    |-- vite.config.js
+|-- graphify-out
+    |-- .graphify_labels.json
+    |-- .graphify_python
+    |-- .graphify_root
+    |-- cost.json
+    |-- GRAPH_REPORT.md
+    |-- graph.html
+    |-- graph.json
+    |-- manifest.json
+|-- overview.md
+|-- package.json
+|-- README.md
+|-- render.yaml
+|-- server
+    |-- .env.example
+    |-- package.json
+    |-- src
+        |-- config.js
+        |-- data
+            |-- catalog.js
+        |-- index.js
+        |-- lib
+            |-- auth.js
+            |-- events.js
+            |-- store.js
+        |-- routes
+            |-- disputes.js
+            |-- orders.js
+            |-- storefront.js
+            |-- system.js
+        |-- services
+            |-- aiService.js
+            |-- checkoutService.js
+            |-- disputeService.js
+            |-- evidenceService.js
+            |-- metricsService.js
+            |-- orderService.js
+            |-- paypalClient.js
+            |-- riskService.js
